@@ -10,9 +10,11 @@ if ($_POST['user'])
 else
 {
     //Otherwise, print the form
-    print <<<_HTML_ <form method="post" action="$_SERVER[PHP_SELF]">
+    print <<<_HTML_
+    <form method="post" action="$_SERVER[PHP_SELF]">
     Your Name: <input type="text" name="user" />
-    <br/> <button type="submit">Say Hello</button>
+    <br/>
+    <button type="submit">Say Hello</button>
     </form>
     _HTML_;
 }
